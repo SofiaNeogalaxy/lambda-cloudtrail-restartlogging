@@ -18,3 +18,14 @@ Event pattern -> AWS services -> CloudTrail -> AWS API Call via CloudTrail -> Sp
 
 3. #### In Lambda console add lambda functione code [lambda-trail-logs.py](https://github.com/SofiaNeogalaxy/lambda-cloudtrail-restartlogging/blob/f7f136ef842800909e8078672901cf91617ff312/lambda-trail-logs.py) to Code editor. 
 4. #### Test and Deploy.
+
+### Note
+
+This Lambda function Start Logging any existing CloudTrail which stopped logging, if you want to specify trail add 
+
+```python
+def lambda_handler(event, context):
+    name = 'TRAIL_ARN'
+```
+and than in Lambda console add in Configuration -> Enviroment variables -> Key:TRAIL_ARN ->Value: arn of your trail
+Also you can specify trail in your Lambda role policy Resource.
