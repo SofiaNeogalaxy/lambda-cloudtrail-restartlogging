@@ -1,7 +1,7 @@
 
 # AWS Lambda Function to Start CloudTrail Logging if Stopped
 
-![](https://github.com/SofiaNeogalaxy/lambda-cloudtrail-restartlogging/blob/ff9413361b75bbb4aa89bc34205e03dea76e6565/awslambdatrail.png)
+![](https://github.com/SofiaNeogalaxy/lambda-cloudtrail-restartlogging/blob/0584fb6baaa94dc7e2f79d1336fee25138e0fb6e/awslambdatrail.png)
 
 ## Usage
 
