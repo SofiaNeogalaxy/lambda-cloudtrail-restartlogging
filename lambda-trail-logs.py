@@ -1,5 +1,5 @@
 import boto3
-import json
+
 
 def Stop_Logging(name):
     cloudtrail_client = boto3.client('cloudtrail')
@@ -30,11 +30,11 @@ def Get_Cloudtrail_Status(name):
 
 def lambda_handler(event, context):
     name = event['detail']['requestParameters']['name']
-    print(name)
     if name:
         # Stop_Logging(name)
         if not Get_Cloudtrail_Status(name):
             Start_Logging(name)
+            print(f"Started logging for CloudTrail {name}")
         else:
             print("Logging already enabled")
     else:
@@ -44,3 +44,4 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'body': 'Function executed successfully'
     }
+
