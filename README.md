@@ -1,6 +1,8 @@
 
 # AWS Lambda Function to Start CloudTrail Logging if Stopped
 
+###This Lambda function Start Logging Cloud Trail if it Stopped Logging and sends logs to CloudWatch Log group.
+
 ![](https://github.com/SofiaNeogalaxy/lambda-cloudtrail-restartlogging/blob/4702929be4b6c65bffd964e84416f1ca4cc3a966/awslambdatrailpic.png)
 
 ## Usage
