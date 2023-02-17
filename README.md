@@ -27,5 +27,6 @@ This Lambda function Start Logging any existing CloudTrail which stopped logging
 def lambda_handler(event, context):
     name = 'TRAIL_ARN'
 ```
-and than in Lambda console add in Configuration -> Enviroment variables -> Key:TRAIL_ARN ->Value: arn of your trail
+and than in Lambda console add in Configuration -> Enviroment variables -> Key:TRAIL_ARN ->Value: arn of your trail.
+
 Also you can specify trail in your Lambda role policy Resource.
